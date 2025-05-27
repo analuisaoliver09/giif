@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar GIFs fofinhos ✨</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>💌 GIFs Fofinhos para WhatsApp</h1>
+        <p>Pesquise figurinhas, memes ou GIFs e compartilhe no WhatsApp com muito estilo! 🌸💜</p>
+
+        <form action="/search" method="get">
+            <input type="text" name="query" placeholder="Ex: gatinho, amor, memes..." required>
+            <button type="submit">🔍 Buscar</button>
+        </form>
+
+        <div class="footer">
+            <p>✨ Feito com carinho para deixar seu WhatsApp mais divertido ✨</p>
+        </div>
+    </div>
+</body>
+</html>

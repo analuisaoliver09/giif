@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados: "{{ query }}" 💜</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 Resultados para: <span class="highlight">"{{ query }}"</span></h1>
+        <p>Escolha seu GIF favorito e envie para alguém especial no WhatsApp! 💌💖</p>
+
+        <div class="gif-grid">
+            {% for gif in gifs %}
+                <div class="gif-item">
+                    <img src="{{ gif }}" alt="GIF fofo">
+                    <a class="whatsapp-button" href="https://wa.me/?text={{ gif }}" target="_blank">
+                        💚 Enviar no WhatsApp
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+        <a class="back" href="/">🔙 Fazer nova busca</a>
+    </div>
+</body>
+</html>

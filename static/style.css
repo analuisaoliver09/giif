@@ -1,0 +1,122 @@
+/* Fundo geral */
+body {
+    background-color: #f8f5fb;
+    font-family: 'Segoe UI', 'Poppins', sans-serif;
+    color: #4a1560;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container central */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(74, 21, 96, 0.1);
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    color: #7c3aed;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Formulário de busca */
+form input[type="text"] {
+    padding: 12px 20px;
+    width: 60%;
+    border: 2px solid #d8b4fe;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus {
+    border-color: #7c3aed;
+}
+
+form button {
+    padding: 12px 25px;
+    background-color: #a855f7;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #9333ea;
+}
+
+/* Grid dos GIFs */
+.gif-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Cada item (GIF) */
+.gif-item {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(122, 81, 149, 0.1);
+    width: 230px;
+    transition: transform 0.3s;
+}
+
+.gif-item:hover {
+    transform: scale(1.05);
+}
+
+.gif-item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Botão WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+
+/* Botão voltar */
+.back {
+    display: inline-block;
+    margin-top: 30px;
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: 500;
+    border: 2px solid #d8b4fe;
+    padding: 8px 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back:hover {
+    background-color: #e9d5ff;
+    color: #4a1560;
+}
